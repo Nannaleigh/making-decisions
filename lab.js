@@ -61,22 +61,22 @@ let rain = true
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
-if (temperature >= 80 && rain == true) {
+if (temperature >= 80 && rain) {
   console.log ('Wear a t-shirt and take an umbrella.')
 }
-else if (temperature >  60 && temperature <  80 && rain == true) {
+else if (temperature >  60 && temperature <  80 && rain ) {
   console.log ('Wear a rain-jacket.')
 }
-else if (temperature <= 60 && rain == true) {
+else if (temperature <= 60 && rain ) {
   console.log ('Wear a jacket and carry an umbrella.')
 }
-else if (temperature <= 60 && rain != true) {
+else if (temperature <= 60 && !rain ) {
   console.log ('Wear a coat.')
 }
-else if (temperature > 60 && temperature < 80 && rain != true) {
+else if (temperature > 60 && temperature < 80 && !rain ) {
   console.log ('Wear pants and a t-shirt.')
 }
-else if (temperature > 80 && rain != true) {
+else if (temperature > 80 && !rain ) {
   console.log ('Wear shorts and a t-shirt.')
 }
 
@@ -135,12 +135,21 @@ for (score = 0; score < passingScore; score++) {
 
 */
 
+let changeMyMind = true
 
+if (changeMyMind === true) {
+  changeMyMind = false 
+} 
+else {
+  changeMyMind = true
+}
 
 ////////// PROBLEM 10 //////////
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
-//CODE HERE
+if (changeMyMind = !changeMyMind){
+changeMyMind = true }
+console.log(changeMyMind)
 
 
 
